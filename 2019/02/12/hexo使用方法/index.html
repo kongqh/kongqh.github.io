@@ -7,17 +7,17 @@
   
   <title>hexo使用方法 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="hexo generate生成静态文件。  选项    描述-d, –deploy    文件生成后立即部署网站-w, –watch    监视文件变动该命令可以简写为:hexo g  hexo server启动服务器。默认情况下，访问网址为： http://localhost:4000/。  选项    描述-p, –port    重设端口-s, –static    只使用静态文件-l,">
+  <meta name="description" content="hexo generate生成静态文件。选项    描述-d, –deploy    文件生成后立即部署网站-w, –watch    监视文件变动该命令可以简写为:hexo g  hexo server启动服务器。默认情况下，访问网址为： http://localhost:4000/。选项    描述-p, –port    重设端口-s, –static    只使用静态文件-l, –log">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo使用方法">
 <meta property="og:url" content="http://yoursite.com/2019/02/12/hexo使用方法/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:description" content="hexo generate生成静态文件。  选项    描述-d, –deploy    文件生成后立即部署网站-w, –watch    监视文件变动该命令可以简写为:hexo g  hexo server启动服务器。默认情况下，访问网址为： http://localhost:4000/。  选项    描述-p, –port    重设端口-s, –static    只使用静态文件-l,">
+<meta property="og:description" content="hexo generate生成静态文件。选项    描述-d, –deploy    文件生成后立即部署网站-w, –watch    监视文件变动该命令可以简写为:hexo g  hexo server启动服务器。默认情况下，访问网址为： http://localhost:4000/。选项    描述-p, –port    重设端口-s, –static    只使用静态文件-l, –log">
 <meta property="og:locale" content="default">
-<meta property="og:updated_time" content="2019-02-28T15:07:09.736Z">
+<meta property="og:updated_time" content="2019-02-28T15:20:27.252Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo使用方法">
-<meta name="twitter:description" content="hexo generate生成静态文件。  选项    描述-d, –deploy    文件生成后立即部署网站-w, –watch    监视文件变动该命令可以简写为:hexo g  hexo server启动服务器。默认情况下，访问网址为： http://localhost:4000/。  选项    描述-p, –port    重设端口-s, –static    只使用静态文件-l,">
+<meta name="twitter:description" content="hexo generate生成静态文件。选项    描述-d, –deploy    文件生成后立即部署网站-w, –watch    监视文件变动该命令可以简写为:hexo g  hexo server启动服务器。默认情况下，访问网址为： http://localhost:4000/。选项    描述-p, –port    重设端口-s, –static    只使用静态文件-l, –log">
   
     <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -87,18 +87,34 @@
     <div class="article-entry" itemprop="articleBody">
       
         <ol>
-<li>hexo generate<br>生成静态文件。</li>
+<li><p>hexo generate<br>生成静态文件。<br>选项    描述<br>-d, –deploy    文件生成后立即部署网站<br>-w, –watch    监视文件变动<br>该命令可以简写为:hexo g</p>
+</li>
+<li><p>hexo server<br>启动服务器。默认情况下，访问网址为： <a href="http://localhost:4000/。" target="_blank" rel="noopener">http://localhost:4000/。</a><br>选项    描述<br>-p, –port    重设端口<br>-s, –static    只使用静态文件<br>-l, –log    启动日记记录，使用覆盖记录格式</p>
+</li>
+<li><p>hexo deploy<br>部署网站。<br>参数    描述<br>-g, –generate    部署之前预先生成静态文件<br>该命令可以简写为:hexo d</p>
+</li>
+<li><p>hexo clean<br>清除缓存文件 (db.json) 和已生成的静态文件 (public)。<br>在某些情况（尤其是更换主题后），如果发现您对站点的更改无论如何也不生效，您可能需要运行该命令。</p>
+</li>
+<li><p>hexo list <type><br>列出网站资料。</type></p>
+</li>
+<li><p>hexo version<br>显示 Hexo 版本。</p>
+</li>
+<li><p>hexo publish [layout] <filename><br>发表草稿。</filename></p>
+</li>
+<li><p>hexo render <file1> [file2] …<br>渲染文件。<br>参数    描述<br>-o, –output    设置输出路径</file1></p>
+</li>
+<li><p>hexo migrate <type><br>从其他博客系统 迁移内容。</type></p>
+</li>
+<li><p>hexo new [layout] <title><br>新建一篇文章。如果没有设置 layout 的话，默认使用 _config.yml 中的 default_layout 参数代替。如果标题包含空格的话，请使用引号括起来。</title></p>
+</li>
+<li><p>hexo init [folder]<br>新建一个网站。如果没有设置 folder ，Hexo 默认在目前的文件夹建立网站。</p>
+</li>
 </ol>
-<p>选项    描述<br>-d, –deploy    文件生成后立即部署网站<br>-w, –watch    监视文件变动<br>该命令可以简写为:hexo g</p>
-<ol start="2">
-<li>hexo server<br>启动服务器。默认情况下，访问网址为： <a href="http://localhost:4000/。" target="_blank" rel="noopener">http://localhost:4000/。</a></li>
-</ol>
-<p>选项    描述<br>-p, –port    重设端口<br>-s, –static    只使用静态文件<br>-l, –log    启动日记记录，使用覆盖记录格式</p>
 
       
     </div>
     <footer class="article-footer">
-      <a data-url="http://yoursite.com/2019/02/12/hexo使用方法/" data-id="cjsorixpg00012hyqvssokdde" class="article-share-link">Share</a>
+      <a data-url="http://yoursite.com/2019/02/12/hexo使用方法/" data-id="cjt0yrmap0001xhyq5mrrt2p8" class="article-share-link">Share</a>
       
       
     </footer>
